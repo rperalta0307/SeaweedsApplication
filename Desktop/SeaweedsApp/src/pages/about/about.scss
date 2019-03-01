@@ -1,0 +1,19 @@
+page-about {
+
+}
+
+.AboutBG{
+    background: linear-gradient(to bottom right,  #FFFFFF, #F9902D);
+}
+.aboutText{
+    position: absolute;
+    text-align: justify;
+    font-size: 1.5em;
+    top: 17%;
+}
+.Logo{
+    position: relative;
+    background-image: url('../assets/imgs/About.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}

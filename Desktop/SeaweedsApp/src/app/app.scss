@@ -1,0 +1,27 @@
+$SIDEMENU_TOP: #FFFFFF;
+$SIDEMENU_BOTTOM: #FFFFF;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+
+.toolbar-background-md {
+    
+    background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+    background-repeat: repeat-x;
+}
+
+
+.Sibol{
+   
+    margin-bottom: 2%;
+    margin-top: -13%;
+    text-align: center;
+}
+.lists{
+    margin-top: 0%;
+}
+
+.center{
+    background-repeat: no-repeat;
+   
+    background-size: 20%;
+    background-position: center;
+}

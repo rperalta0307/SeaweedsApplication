@@ -1,0 +1,243 @@
+page-monitor {
+
+}
+
+
+
+.cards-bg{
+    
+    .card-params {
+        
+        position: relative;
+        font-size: 1.8em;
+        width: 100%;
+        font-weight: bold;
+        //color: #6E0EE1;
+    }
+    .card-title {
+        position: relative;
+        font-size: 1.8em;
+        width: 100%;
+        font-weight: bold;
+        //background: #32db64;
+        
+    }
+    
+}
+.crops{
+    position: relative;
+    text-align: center;
+
+}
+ion-card.monitor {
+    position: relative;
+    text-align: center;
+    //background: #44B3C2;
+    background: linear-gradient(to bottom right,  #17EAD8, #6078EA);
+
+}
+ion-card.temperature {
+    position: relative;
+    text-align: center;
+    //background: #44B3C2;
+    background: linear-gradient(to bottom right,  #F64848, #FFB158);
+}
+ion-card.humidity {
+    position: relative;
+    text-align: center;
+    //background: #44B3C2;
+    background: linear-gradient(to bottom right,  #00A8C5, #FFFF7E);
+}
+ion-card.ph {
+    position: relative;
+    text-align: center;
+    //background: #44B3C2;
+    background: linear-gradient(to bottom right,  #074177, #FFE98A);
+}
+/*ion-card-content.monitorBG{
+    //background: #F9CDAD;
+    
+}
+ion-card-header.monitorBG{
+    //background: #F9CDAD;
+    
+}*/
+.monitor {
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: black;
+    //background: #f4f4f4;
+}
+
+
+.text-left{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+}
+.text-center{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+}
+.text_OnOff{
+    margin-left: 51%;
+    margin-top: -3%;
+    -webkit-text-fill-color: white;
+}
+.text_OnOff_ph{
+    margin-left: 42%;
+    margin-top: -3%;
+    -webkit-text-fill-color: white;
+}
+ion-label.measuredTemp{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    font-size: 5em;
+    //<img src="assets/imgs/temp.png"/>
+    background-image: url('../assets/imgs/Celsius.png');
+    background-position-x: 95%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+}
+ion-label.measuredHum{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    font-size: 5em;
+    //<img src="assets/imgs/temp.png"/>
+    background-image: url('../assets/imgs/humidity2.png');
+    background-position-x: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+}
+ion-label.measuredPh{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    font-size: 5em;
+    //<img src="assets/imgs/temp.png"/>
+    background-image: url('../assets/imgs/Ph.png');
+    background-position-x: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0%;
+}
+ion-label.optTemp{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    margin-top: 0%;
+}
+ion-label.optHum{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    margin-top: 0%;
+}
+ion-label.optPh{
+    position: relative;
+    text-align: left;
+    -webkit-text-fill-color: white;
+    margin-top: 0%;
+}
+
+ion-card.card{
+    box-shadow: none;
+    //background: #f4f4f4; 
+    //background:	#87CEFA;
+    border-radius: 5px;
+}
+ion-card-header{
+ 
+    //background: #488aff;
+    font-size: 5em;
+    font-weight: bold;
+    //background: #87CEFA;
+}
+ion-card-header.temperature{
+    //background-image: url('../assets/imgs/temp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    //background:  #FFB85F;
+}
+ion-card-content.temperature{
+    //background:  #FFB85F;
+}
+ion-card-header.humidity{
+    //background-image: url('../assets/imgs/humidity2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    //background: #A8E6CE;
+}
+ion-card-content.humidity{
+    //background: #A8E6CE;
+}
+ion-card-header.ph{
+    //background-image: url('../assets/imgs/Ph.png');
+    background-size: 4.5em;
+    margin: auto;
+    background-repeat: no-repeat;
+    //background: #C8C8A9;
+}
+ion-card-content.ph{
+    //background: #C8C8A9;
+}
+.chart-containerTemp{
+    position: relative;
+    margin: auto;
+    height: 60vh;
+    //width: 80vw;
+    width: auto;
+    margin-left: -5%;
+}
+.chart-containerHum{
+    position: relative;
+    margin: auto;
+    height: 70vh;
+    //width: 80vw;
+    width: auto;
+    margin-left: -5%;
+}
+.chart-containerPh{
+    position: relative;
+    margin: auto;
+    height: 60vh;
+    width: auto;
+    //width: 80vw;
+    margin-left: -5%;
+}
+
+.tempToggle{
+    margin-left: 56%;
+    margin-top: -10.5%;
+}
+
+.tempToggle2{
+    margin-left: 77%;
+    margin-top: -10%;
+}
+
+
+.phUpToggle{
+    margin-left: 50%;
+    margin-top: -10.5%;
+}
+
+.phDownToggle{
+    margin-left: 76%;
+    margin-top: -9.5%;
+}
+
+$colors: (
+    primary:#48B0F7,
+    secondary:#10CFBD,
+    tempToggleColor:#F51515
+ )
+
+ 
+  
+

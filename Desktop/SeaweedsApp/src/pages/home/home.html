@@ -1,0 +1,158 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+    <ion-icon name="home"></ion-icon>
+      Home
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="bg">
+  
+  <ion-title class="logo">
+  <br><br><br><br>
+  </ion-title>
+  <h4 class="center">MCU-BASED CONTROLLED ENVIRONMENT</h4>
+    <h4 class="center">FOR EUCHEUMA SEAWEEDS</h4>
+      <h4 class="center">TO PREVENT ICE-ICE DISEASE</h4>
+  
+  
+  <h4 class="center">Seaweeds To Be Monitored</h4>
+  <ion-list>
+  <ion-item>
+    <ion-label>Seaweeds</ion-label>
+    <ion-select [(ngModel)]="crop1" (ionChange)="change(crop1)">
+      
+      
+    <ion-option>Alvarezii</ion-option>
+      <ion-option>Eucheuma</ion-option>
+      <ion-option>Gracilaria</ion-option>
+      </ion-select>
+  </ion-item>
+  <!--
+  <ion-item>
+    <ion-label>Crop 2</ion-label>
+      <ion-select [(ngModel)]="crop2" (ionChange)="change2(crop2)">
+       
+      
+    <ion-option>Asparagus</ion-option>
+      <ion-option>Basil</ion-option>
+      <ion-option>Beans and Peas</ion-option>
+      <ion-option>Brocolli</ion-option>
+      <ion-option>Cabbage</ion-option>
+      <ion-option>Cauliflower</ion-option>
+    <ion-option>Celery</ion-option>
+      <ion-option>Cucumber</ion-option>
+      <ion-option>Eggplant</ion-option>
+      <ion-option>Lettuce</ion-option>
+      <ion-option>Mangold</ion-option>
+    <ion-option>Mint</ion-option>
+    <ion-option>Mustard</ion-option>
+    <ion-option>Okra</ion-option>
+      <ion-option>Parsley</ion-option>
+    <ion-option>Pechay</ion-option>
+      <ion-option>Peppers</ion-option>
+    <ion-option>Spinach</ion-option>
+    <ion-option>Strawberry</ion-option>
+    <ion-option>Sweet Corn</ion-option>
+      <ion-option>Tomato</ion-option>
+      </ion-select>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label>Crop 3</ion-label>
+      <ion-select [(ngModel)]="crop3" (ionChange)="change3(crop3)">
+        
+      
+    <ion-option>Asparagus</ion-option>
+      <ion-option>Basil</ion-option>
+      <ion-option>Beans and Peas</ion-option>
+      <ion-option>Brocolli</ion-option>
+      <ion-option>Cabbage</ion-option>
+      <ion-option>Cauliflower</ion-option>
+    <ion-option>Celery</ion-option>
+      <ion-option>Cucumber</ion-option>
+      <ion-option>Eggplant</ion-option>
+      <ion-option>Lettuce</ion-option>
+      <ion-option>Mangold</ion-option>
+    <ion-option>Mint</ion-option>
+    <ion-option>Mustard</ion-option>
+    <ion-option>Okra</ion-option>
+      <ion-option>Parsley</ion-option>
+    <ion-option>Pechay</ion-option>
+      <ion-option>Peppers</ion-option>
+    <ion-option>Spinach</ion-option>
+    <ion-option>Strawberry</ion-option>
+    <ion-option>Sweet Corn</ion-option>
+      <ion-option>Tomato</ion-option>
+      </ion-select>
+  </ion-item>
+-->
+  </ion-list>
+
+  <button class="right"  ion-button (click)="doConfirm()" disabled={{buttonDisabled}}>
+    <ion-icon name='checkmark'></ion-icon>
+    Done
+  </button>
+  
+<!--
+  <h4 class="center">Fish To Be Monitored</h4>
+  <ion-list>
+  <ion-item>
+  <ion-label>Select Fish</ion-label>
+    <ion-select [(ngModel)]="fish" (ionChange)="changeFish(fish)">
+        <ion-option>Bangus</ion-option>
+        <ion-option>Tilapia</ion-option>
+        <ion-option>Bisugo</ion-option>
+        <ion-option>Hito</ion-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+  <ion-label>Number of Fishes</ion-label>
+    <ion-select [(ngModel)]="NumberOfFish" (ionChange)="changeNumberOfFish(NumberOfFish)">
+        <ion-option>1-10</ion-option>
+        <ion-option>11-20</ion-option>
+        <ion-option>21-30</ion-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+  <ion-label>Age of Fish</ion-label>
+    <ion-select [(ngModel)]="AgeOfFish" (ionChange)="changeAgeOfFish(AgeOfFish)">
+        <ion-option>1 Week Old</ion-option>
+        <ion-option>2 Weeks Old</ion-option>
+        <ion-option>3 Weeks Old</ion-option>
+    <ion-option>1 Month Old</ion-option>
+    <ion-option>1 and 1/2 Months Old</ion-option>
+    <ion-option>2 Months Old</ion-option>
+    </ion-select>
+  </ion-item>
+  
+  </ion-list>
+
+  <button class="right"  ion-button (click)="doConfirm2()" disabled={{buttonDisabled2}}>
+    <ion-icon name='checkmark'></ion-icon>
+    Done
+  </button>
+-->
+
+  <br>
+  <br>
+  <br>
+
+  <div class="chart-containerHome">
+    <canvas #lineCanvasHome></canvas>
+  </div>
+
+</ion-content>
+

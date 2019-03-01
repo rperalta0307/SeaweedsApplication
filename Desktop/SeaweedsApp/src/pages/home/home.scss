@@ -1,0 +1,49 @@
+page-home {
+
+}
+.titleLogo{
+    position: relative;
+    text-align: center;
+    margin-right: 70%;
+ 
+}
+.titleLogo2{
+    position: relative;
+    text-align: right;
+    margin-right: 70%;
+}
+.pangRelative{
+    position: relative;
+}
+.logo{
+    
+    position: relative;
+   // background-image: url('../assets/imgs/27939027_1790008401010554_588592352_n.png');
+     background-image: url('../assets/imgs/sea2.png');
+   
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.bg{
+  // background: linear-gradient(to bottom right,  #360033, #0B8793);
+background: linear-gradient(to bottom right,  #FFFfFF, #FFFFfF);
+}
+.listBG{
+    //background: #f4f4f4;
+    background: #FFFFFF;
+}
+.center{
+    text-align: center;
+    color: black;
+}
+.right{
+    margin-left: 38%;
+   position: relative;
+}
+.chart-containerHome {
+    position: relative;
+    margin: auto;
+    height: 60vh;
+    width: 95vw;
+    margin-left: -5%;
+  }

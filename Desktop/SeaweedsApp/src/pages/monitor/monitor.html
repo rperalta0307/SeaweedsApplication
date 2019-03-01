@@ -1,0 +1,100 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><ion-icon name="desktop"></ion-icon> Monitor</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="logOut()">
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+<ion-list>
+<ion-card class="monitor">
+  <ion-card-header  class="monitorBG">
+    <h1 class="card-title">Seaweeds Being<br> Monitored</h1>
+  </ion-card-header >
+  <ion-card-content class="monitorBG"> 
+    <ion-grid>
+      <ion-row> 
+        <ion-col col-7>
+          <ion-label>Seaweeds #1: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{cropName1}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Seaweeds #2: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{cropName2}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Seaweeds #3: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{cropName3}}</ion-label>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+<ion-card class="temperature">  
+    <div class="card-params">
+      <ion-card-header class="temperature">
+        <h1 class="card-params">TEMPERATURE</h1> 
+      </ion-card-header>
+      <ion-card-content class="temperature">
+        <ion-label class="measuredTemp" >{{sensor_temperature}}</ion-label>
+        
+          <div class="chart-containerTemp">
+            <canvas #lineCanvas></canvas>
+          </div>
+      </ion-card-content>
+    </div>
+</ion-card>
+
+<ion-card class="humidity">
+    <div class="card-params">
+      <ion-card-header class="humidity">
+        <h1 class="card-params">Salinity </h1 >
+      </ion-card-header>
+      <ion-card-content class="humidity">
+        <ion-label class="measuredHum"> {{sensor_salinity}}</ion-label>
+      
+          <div class="chart-containerHum">
+            <canvas #lineCanvas2></canvas>
+          </div>
+      </ion-card-content>
+    </div>
+</ion-card>
+
+<ion-card class="ph">
+    <div class="card-params">
+      <ion-card-header class="ph">
+        <h1 class="card-params">ACIDITY </h1 >
+      </ion-card-header>
+      <ion-card-content class="ph">
+        <ion-label class="measuredPh"> {{sensor_acidity}}</ion-label>
+           <div class="chart-containerPh">
+            <canvas #lineCanvas3></canvas>
+          </div>
+      </ion-card-content>
+    </div>
+</ion-card>
+</ion-list>
+
+</ion-content>
+
+

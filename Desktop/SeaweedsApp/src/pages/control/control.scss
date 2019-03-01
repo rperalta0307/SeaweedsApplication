@@ -1,0 +1,46 @@
+page-control {
+
+}
+
+ion-card.temperatureControl{
+    position: relative;
+    //text-align: center;
+    //background: #44B3C2;
+    background: linear-gradient(to bottom right,  #F64848, #FFB158);
+}
+
+ion-card.acidityControl{
+    position: relative;
+    background: linear-gradient(to bottom right,  #074177, #FFE98A);
+}
+
+.setControl{
+    position: relative;
+    text-align: left;
+    font-size: 2em;
+}
+
+.buttonUp{
+    position: relative;
+    margin-top: -5%;
+}
+
+.buttonDown{
+    position: relative;
+    margin-top: -5%;
+}
+
+.status{
+    position: relative;
+    background: linear-gradient(to bottom right,  #17EAD8, #6078EA);
+}
+.sensorstatus{
+    position: relative;
+    background: linear-gradient(to bottom right,  #33ccff, #ff99cc);
+}
+
+
+.submitControl{
+    margin-left: 38%;
+   position: relative;
+}

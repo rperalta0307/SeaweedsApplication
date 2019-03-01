@@ -1,0 +1,122 @@
+<!--
+  Generated template for the ControlPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  <ion-title><ion-icon name="switch"></ion-icon> Control</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+  <ion-card class="temperatureControl">
+    <ion-card-header>
+      <h1>Temperature</h1>
+    </ion-card-header>
+
+    <ion-card-content>
+      <p>Measured: {{sensor_temperature}} </p>
+      <p>Optimal: {{lowest_temperature}} - {{highest_temperature}}</p>
+      
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card class="acidityControl">
+      <ion-card-header>
+        <h1>Acidity</h1>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <p>Measured: {{sensor_acidity}} </p>
+        <p>Optimal: {{lowest_acidity}} - {{highest_acidity}} </p>
+        
+      </ion-card-content>
+  
+    </ion-card>
+
+  </ion-list>
+
+
+  <ion-card class="status">
+  <ion-card-content>
+  <ion-list>
+    <ion-label>
+      Actuator Status
+    </ion-label>
+      
+    
+      <ion-item>
+        <ion-label>Power LED Light</ion-label>
+        <ion-toggle [(ngModel)]="ToggleGrowLight" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+
+
+     
+
+      <ion-item>
+        <ion-label>Water Pump OFF</ion-label>
+        <ion-toggle [(ngModel)]="ToggleWaterPump" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+	  
+	  <ion-item>
+        <ion-label>Fish Feeder</ion-label>
+        <ion-toggle [(ngModel)]="ToggleFishFeeder" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+
+  </ion-list>
+  </ion-card-content>
+  </ion-card>
+
+
+  <ion-card class="sensorstatus">
+  <ion-card-content>
+  <ion-list>
+    <ion-label>
+      Sensor Status
+    </ion-label>
+     
+      <ion-item>
+        <ion-label>PH Sensor Status</ion-label>
+        <ion-toggle color="secondary" [(ngModel)]="Toggleph" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+
+     
+
+      <ion-item>
+        <ion-label>DHT Sensor Status</ion-label>
+        <ion-toggle color="secondary" [(ngModel)]="Toggledht" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+    
+    <ion-item>
+        <ion-label>Water Temperature Sensor Status</ion-label>
+        <ion-toggle color="secondary" [(ngModel)]="Toggletemp" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+
+
+    <ion-item>
+        <ion-label>Water Level Sensor Status</ion-label>
+        <ion-toggle color="secondary" [(ngModel)]="Togglelvl" (ionChange)="notify()"></ion-toggle>
+      </ion-item>
+
+  </ion-list>
+  </ion-card-content>
+  </ion-card>
+
+
+  <button class="submitControl"  ion-button (click)="doConfirm()" disabled={{buttonDisabled}}>
+    <ion-icon name='checkmark'></ion-icon>
+    Done
+  </button>
+
+</ion-content>

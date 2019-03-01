@@ -1,0 +1,300 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><ion-icon name="paper"></ion-icon> Reports</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="logOut()">
+          <ion-icon name="log-out"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="cards-bg">
+
+<ion-list>
+<ion-card class="monitor">
+  <ion-card-header  class="monitorBG">
+    <h1 class="card-title">MORNING</h1>
+  </ion-card-header >
+  <ion-card-content class="monitorBG"> 
+    <ion-grid>
+      <ion-row> 
+        <ion-col col-7>
+          <ion-label>Date: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningDate}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Time: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningTime}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningEnvi}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Humidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningHumidity}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Acidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningPH}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningTemp}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Level: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{MorningWtrlvl}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+<ion-card class="monitor">
+  <ion-card-header  class="monitorBG">
+    <h1 class="card-title">AFTERNOON</h1>
+  </ion-card-header >
+  <ion-card-content class="monitorBG"> 
+    <ion-grid>
+      <ion-row> 
+        <ion-col col-7>
+          <ion-label>Date: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftDate}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Time: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftTime}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftEnvi}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Humidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftHumidity}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Acidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftPH}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftTemp}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Level: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{AftWtrlvl}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+<ion-card class="monitor">
+  <ion-card-header  class="monitorBG">
+    <h1 class="card-title">EVENING</h1>
+  </ion-card-header >
+  <ion-card-content class="monitorBG"> 
+    <ion-grid>
+      <ion-row> 
+        <ion-col col-7>
+          <ion-label>Date: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveDate}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Time: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveTime}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveEnvi}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Humidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveHumidity}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Acidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EvePH}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveTemp}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Level: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{EveWtrlvl}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+<ion-card class="monitor">
+  <ion-card-header  class="monitorBG">
+    <h1 class="card-title">DAWN</h1>
+  </ion-card-header >
+  <ion-card-content class="monitorBG"> 
+    <ion-grid>
+      <ion-row> 
+        <ion-col col-7>
+          <ion-label>Date: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnDate}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Time: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnTime}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnEnvi}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Greenhouse Humidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnHumidity}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Acidity: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnPH}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Temperature: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnTemp}}</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-7>
+          <ion-label>Water Level: </ion-label>
+        </ion-col>
+        <ion-col col-auto>
+          <ion-label>{{DawnWtrlvl}}</ion-label>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+  </ion-card-content>
+</ion-card>
+
+</ion-list>
+
+</ion-content>
+
+
